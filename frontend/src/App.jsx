@@ -25,6 +25,9 @@ import Notif from "./pages/Notif";
 import Admin from "./pagesadmin/Dashboardadmin";
 import AdminLembaga from "./pagesadmin/LembagaPage";
 import Pusatbantuanadmin from "./pagesadmin/Pusatbantuanadmin";
+import Popup from "./pages/Popup";
+import Verifikasi from "./pages/VerifikasiPop";
+import Konfirmasi from "./pages/KonfirmasiPopup";
 
 function App() {
   return (
@@ -58,6 +61,9 @@ function App() {
         <Route path="/admindashboard" element={<Admin />} />
         <Route path="/adminlembaga" element={<AdminLembaga />} />
         <Route path="/pusatbantuanadmin" element={<Pusatbantuanadmin />} />
+        <Route path="/popup" element={<Popup />} />
+        <Route path="/verifikasi" element={<Verifikasi />} />
+        <Route path="/konfirmasi" element={<Konfirmasi />} />
       </Routes>
     </BrowserRouter>
   );
