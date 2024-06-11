@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css"; // Import FontAwesome
+import { Link } from "react-router-dom";
 
 const Transaksi1 = () => {
   const [donationAmount, setDonationAmount] = useState("");
@@ -295,7 +296,7 @@ const Transaksi1 = () => {
                     </option>
                     <option value="ovo">
                       <img
-                        src="/assets/OvoLogo.png"
+                        src=""
                         alt="ovo"
                         style={{ marginRight: "5px", height: "20px" }}
                       />
@@ -344,13 +345,14 @@ const Transaksi1 = () => {
                   </select>
                 </div>
                 <div className="mt-3 d-flex justify-content-center">
-                  <button
+                  <Link
+                    to="/transaksi2"
                     type="button"
                     className="btn btn-warning continue-button"
                     style={styles.continueButton}
                   >
                     Lanjutkan Pembayaran
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -441,6 +443,9 @@ const styles = {
     borderRadius: "15px",
     color: "#4D96B6",
     marginTop: "36%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
 };
 

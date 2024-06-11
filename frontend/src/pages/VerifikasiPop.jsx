@@ -69,6 +69,7 @@ const Verifikasi = () => {
       color: black;
       font-weight: bold;
       margin-bottom: 20px;
+      font-size: 20px
     }
 
     .verifikasi-popup-inner .buttons {

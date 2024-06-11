@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Konfirmasi = () => {
   const [isKonfirmasiPopupOpen, setIsKonfirmasiPopupOpen] = useState(true);
@@ -118,10 +119,14 @@ const KonfirmasiPopup = ({ topText, bottomText, handleClose }) => {
         right: 25px; /* Mengatur jarak dari kanan */
         background: #ffffff;
         color: #4d96b6;
-        border: none;
+        border: none; /* Menghilangkan garis border */
+        outline: none; /* Menghilangkan outline */
         border-radius: 20px;
         padding: 5px 10px;
         cursor: pointer;
+        text-decoration: none; /* Menghilangkan garis bawah pada Link */
+        display: inline-block;
+        text-align: center;
       }
 
       .konfirmasi-popup-inner p.bottom-text {
@@ -175,9 +180,9 @@ const KonfirmasiPopup = ({ topText, bottomText, handleClose }) => {
           <div className="checkmark"></div>
         </div>
         <p className="bottom-text">{bottomText}</p>
-        <button className="close-btn" onClick={handleClose}>
-          Tutup
-        </button>
+        <Link to="/" className="close-btn" onClick={handleClose}>
+          Ok
+        </Link>
       </div>
     </div>
   );

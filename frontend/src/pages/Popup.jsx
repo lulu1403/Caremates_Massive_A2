@@ -71,6 +71,9 @@ const Popup = () => {
         background-color: #21726a;
         color: #ffffff;
       }
+      .popup-inner h2 {
+          font-size: 25px;
+        }
 
       @media (max-width: 600px) {
         .popup-inner {

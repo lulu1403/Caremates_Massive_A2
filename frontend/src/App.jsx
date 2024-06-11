@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Beranda from "./pages/beranda";
+import Beranda from "./pages/Beranda";
 import BeriDonasi from "./pages/Beridonasi";
 import Pusatbantuan from "./pages/Pusatbantuan";
 import Tentangkami from "./pages/Tentangkami";
@@ -25,7 +25,6 @@ import Notif from "./pages/Notif";
 import Admin from "./pagesadmin/Dashboardadmin";
 import AdminLembaga from "./pagesadmin/LembagaPage";
 import Pusatbantuanadmin from "./pagesadmin/Pusatbantuanadmin";
-
 
 function App() {
   return (
@@ -59,7 +58,6 @@ function App() {
         <Route path="/admindashboard" element={<Admin />} />
         <Route path="/adminlembaga" element={<AdminLembaga />} />
         <Route path="/pusatbantuanadmin" element={<Pusatbantuanadmin />} />
-
       </Routes>
     </BrowserRouter>
   );
