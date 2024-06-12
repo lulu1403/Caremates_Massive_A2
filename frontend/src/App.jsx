@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Beranda from "./pages/beranda";
+import Beranda from "./pages/Beranda";
 import BeriDonasi from "./pages/Beridonasi";
 import Pusatbantuan from "./pages/Pusatbantuan";
 import Tentangkami from "./pages/Tentangkami";
@@ -25,7 +25,10 @@ import Notif from "./pages/Notif";
 import Admin from "./pagesadmin/Dashboardadmin";
 import AdminLembaga from "./pagesadmin/LembagaPage";
 import Pusatbantuanadmin from "./pagesadmin/Pusatbantuanadmin";
-import Konfirmasidonasi from "./pages/Konfirmasidonasi";
+import Admindata from "./pagesadmin/AdminPage";
+import Notifpage from "./pagesadmin/NotifPage";
+import Transaksipage from "./pagesadmin/TransaksiPage";
+// import Konfirmasidonasi from "./pages/Konfirmasidonasi";
 
 
 function App() {
@@ -57,7 +60,10 @@ function App() {
         <Route path="/admindashboard" element={<Admin />} />
         <Route path="/adminlembaga" element={<AdminLembaga />} />
         <Route path="/pusatbantuanadmin" element={<Pusatbantuanadmin />} />
-        <Route path="/konfirmasidonasi" element={<Konfirmasidonasi />} />
+        <Route path="/dataadmin" element={<Admindata />} />
+        <Route path="/notifpage" element={<Notifpage />} />
+        <Route path="/transaksipage" element={<Transaksipage />} />
+        {/* <Route path="/konfirmasidonasi" element={<Konfirmasidonasi />} /> */}
         
 
       </Routes>

@@ -19,34 +19,23 @@ function Lembaga() {
 
   return (
     <main className='main-container'>
-      <p style={{fontSize:"30px", width:"100", textAlign:"center"}}>DATA LEMBAGA</p>
-      <Button className="mb-4" style={{backgroundColor:"#4D96B6"}}>Tambah Lembaga +</Button>{' '}
+      <p style={{fontSize:"30px", width:"100", textAlign:"center"}}>DATA ADMIN</p>
       <Table striped bordered hover variant='dark' style={tableStyle}>
         <thead style={headerStyle}>
           <tr style={{justifyContent:'center', textAlign:'center'}}>
-            <th>NO</th>
-            <th>Nama Lembaga</th>
-            <th>Alamat</th>
-            <th>Telepon</th>
-            <th>Aksi</th>
+            <th>No</th>
+            <th>Nama Admin</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td>Amanah Panti</td>
-            <td>jl. Amanah</td>
-            <td>0812345678</td>
-            <td className="text-center"><Button className="me-1"  variant="primary">Edit</Button><Button className="me-1" variant="danger">Hapus</Button></td>
+            <td>Admin 1</td>
             
           </tr>
           <tr style={rowStyle}>
             <td>2</td>
-            <td>Melati Yayasan</td>
-            <td>jl. melati </td>
-            <td>0812345677</td>
-            <td className="text-center"><Button className="me-1"  variant="primary">Edit</Button><Button className="me-1" variant="danger">Hapus</Button></td>
-          </tr>
+            <td>Admin 2</td></tr>
         </tbody>
       </Table>
     </main>
