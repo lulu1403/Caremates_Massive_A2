@@ -94,7 +94,7 @@ const PengajuanpencairanStyle = ({ onNavigate }) => {
             </div>
           </div>
         </div>
-        <div className="row pt-3 mb-2 justify-content-end" style={{marginTop: 'auto'}}>
+        <div className="row pt-0 mb-2 justify-content-end" style={{marginTop: 'auto'}}>
           <div className="col-2 " style={{display:'flex', justifyContent:'end'}}>
             <button style={button1Style}>Ajukan</button>
           </div>

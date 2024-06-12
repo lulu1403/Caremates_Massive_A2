@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Beranda from "./pages/Beranda";
+import Beranda from "./pages/beranda";
 import BeriDonasi from "./pages/Beridonasi";
 import Pusatbantuan from "./pages/Pusatbantuan";
 import Tentangkami from "./pages/Tentangkami";
