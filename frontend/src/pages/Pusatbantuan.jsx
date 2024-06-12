@@ -35,7 +35,7 @@ const Pusatbantuan = () => {
 
   const StyledAccordion = styled(Accordion)`
     overflow-y: auto;
-    max-height: 45vh;
+    max-height: 43vh;
     border-radius: 25px;
 
     /* Hide scrollbar for Chrome, Safari, and Opera */

@@ -148,7 +148,7 @@ const Profile = () => {
           <ul style={styles.sidebarMenu}>
             <li style={styles.menuitem}>
               <Link
-                to="/detaildonasi"
+                to="/sudahpenggalangan"
                 className="btn btn-primary"
                 style={styles.button}
               >

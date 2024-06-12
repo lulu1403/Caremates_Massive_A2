@@ -9,7 +9,7 @@ import Navbarfirst from '../components/NavbarPanti';
 const Sudahpenggalangan = () => {
   // Fungsi untuk menampilkan slide secara otomatis
   
-  const donationCollected = 1000000; // Variabel untuk donasi terkumpul
+  const donationCollected = 15000; // Variabel untuk donasi terkumpul
   const donationNeeded = 25000000; // Variabel untuk donasi dibutuhkan
 
   return (
@@ -75,11 +75,11 @@ const Sudahpenggalangan = () => {
       <section className="home">
         <div className="container1 justify-content-center" style={{ display: 'flex', paddingTop: '12%'}}>
             <div style={{paddingTop:'12%', textAlign: 'center'}}>
-                <h6 style={{fontWeight: 'bold'}}>Selamat Datang!</h6>
+                <h6 style={{fontWeight: 'bold', paddingTop:'1%'}}>Selamat Datang!</h6>
                 <p style={{fontWeight: '300',fontSize:'90%'}}>Berikut rincian penggalangan dana yang sudah diajukan untuk Pengembangan <br/> fasilitas hafiz Qur’an 
                     Yayasan Yatim Piatu Roudlotul Jannah. </p>
             </div>
-            <div className="background-kuning" style={backgroundkuningStyle}>
+            <div className="background-kuning mt-2" style={backgroundkuningStyle}>
             <div className="progres-bar" style={{width:'100%', padding: '20px'}}>
             <ProgressBar now={donationCollected / donationNeeded * 100}/> <br/>
             <Row className="justify-content-between">
@@ -129,7 +129,7 @@ const Sudahpenggalangan = () => {
                 <div className='col-6'>
                   <p style={{textAlign:'center', fontFamily: 'Open Sans', fontWeight: '300', fontSize:'20px'}}>Detail Pengeluaran</p>
                   <hr style={{border:'4px solid', color:'white',borderRadius: '30px'}}/>
-                  <div className='row' style={{background:"rgba(255, 255, 255, 0.25)", borderRadius:"30px", height:'32%'}}>
+                  {/* <div className='row' style={{background:"rgba(255, 255, 255, 0.25)", borderRadius:"30px", height:'32%'}}>
                   <Row className="align-items-center">
                     <Col>
                       <p style={{marginTop:'2%', fontSize:'80%'}}>Pencairan Dana II</p> 
@@ -180,7 +180,7 @@ const Sudahpenggalangan = () => {
                       <p style={{marginTop:'1%', fontSize:'80%'}}>24 Mei 2024</p> 
                     </Col>
                   </Row>
-                  </div>                   
+                  </div>   */}                 
                 </div>
                 
             </div>
