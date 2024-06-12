@@ -1,45 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
-import Button from 'react-bootstrap/Button';
+import adminAPI from '../../api/adminservice';
 
-function Lembaga() {
-  const tableStyle = {
-    backgroundColor: "rgba(255, 255, 255, 0.8)",
-    border: "1px solid #ddd"
-  };
+function Admin() {
+    const [data, setData] = useState([]);
 
-  const headerStyle = {
-    backgroundColor: "#0098d9",
-    color: "white"
-  };
+    useEffect(() => {
+      fetchData();
+    }, []);
 
-  const rowStyle = {
-    backgroundColor: "rgba(0, 200, 255, 0.1)",
-  };
+    const fetchData = async () => {
+        try {
+          const response = await adminAPI.getAllAdmin();
+          setData(response.results);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      }
 
   return (
     <main className='main-container'>
-      <p style={{fontSize:"30px", width:"100", textAlign:"center"}}>DATA ADMIN</p>
-      <Table striped bordered hover variant='dark' style={tableStyle}>
-        <thead style={headerStyle}>
-          <tr style={{justifyContent:'center', textAlign:'center'}}>
+      <p style={{ fontSize: "30px", width: "100", textAlign: "center" }}>DATA ADMIN</p>
+      <Table striped bordered hover variant='dark'>
+        <thead style={{ backgroundColor: "#0098d9", color: "white" }}>
+          <tr style={{ justifyContent: 'center', textAlign: 'center' }}>
             <th>No</th>
             <th>Nama Admin</th>
+            <th>Password</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>Admin 1</td>
-            
-          </tr>
-          <tr style={rowStyle}>
-            <td>2</td>
-            <td>Admin 2</td></tr>
+          {data.map((item, index) => (
+            <tr key={index}>
+              <td>{index + 1}</td>
+              <td>{item.username}</td>
+              <td>{item.password}</td>
+            </tr>
+          ))}
         </tbody>
       </Table>
     </main>
   );
 }
 
-export default Lembaga;
+export default Admin;

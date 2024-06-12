@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Navbarfirst from '../components/NavbarPanti';
 import caremates from '../img/img-navbarpanti/caremates2.png';
+import { Link } from 'react-router-dom';
 
 const Homepanti = () => {
   
@@ -136,9 +137,9 @@ const Homepanti = () => {
           </Row>
           <Row>
             <Col xs={12} style={{ paddingTop: '0%' }}>
-              <div className="icon col-md-12 justify-content-center">
-                <div className="button-ajukan" style={{padding:'2%'}}>Ajukan Penggalangan Dana</div>
-              </div>
+              <Link to="/pengajuanpenggalangan" className="icon col-md-12 justify-content-center" style={{textDecoration: 'none'}}>
+                <div className="button-ajukan" style={{padding:'2%', }}>Ajukan Penggalangan Dana</div>
+              </Link>
             </Col>
           </Row>
         </Container>

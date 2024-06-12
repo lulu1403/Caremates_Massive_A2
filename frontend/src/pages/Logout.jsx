@@ -9,6 +9,7 @@ function LogoutPopup() {
   const handleLogout = () => {
     alert("Logging out...");
     handleClose();
+    
   };
 
   // Membuka popup saat komponen pertama kali di-render

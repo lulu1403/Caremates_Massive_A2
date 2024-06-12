@@ -47,11 +47,11 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             <BsMenuButtonWideFill className='icon' /> Transaksi
           </a>
         </li>
-        {/* <li className={`sidebar-list-item ${isActive('/pengaturan')}`}>
-          <a href="/pengaturan">
-            <BsFillGearFill className='icon' /> Pengaturan
+        <li className={`sidebar-list-item`}>
+          <a href="/loginadmin">
+            <BsFillGearFill className='icon' /> Logout
           </a>
-        </li> */}
+        </li>
       </ul>
     </aside>
   );

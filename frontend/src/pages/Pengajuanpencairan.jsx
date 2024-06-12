@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const PengajuanpencairanStyle = ({ onNavigate }) => {
   const [text, setText] = useState('');
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
     setText(e.target.value);
   };
@@ -45,7 +46,7 @@ const PengajuanpencairanStyle = ({ onNavigate }) => {
       <section style={{width: '100%'}}>
         <div className="row" style={{paddingTop:'1%'}}>
             <div className="col-1 justify-content-end align-content-center" style={{marginLeft: '20px'}}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" onClick={() => navigate(-1)} style={{cursor: 'pointer'}} fill="none">
                 <path d="M12.5 30L27.5 15M12.5 30L27.5 45M12.5 30H47.5" stroke="white" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
             </div>

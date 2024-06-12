@@ -28,7 +28,7 @@ import Pusatbantuanadmin from "./pagesadmin/Pusatbantuanadmin";
 import Admindata from "./pagesadmin/AdminPage";
 import Notifpage from "./pagesadmin/NotifPage";
 import Transaksipage from "./pagesadmin/TransaksiPage";
-// import Konfirmasidonasi from "./pages/Konfirmasidonasi";
+import Konfirmasidonasi from "./pages/Konfirmasidonasi";
 
 
 function App() {
@@ -63,7 +63,7 @@ function App() {
         <Route path="/dataadmin" element={<Admindata />} />
         <Route path="/notifpage" element={<Notifpage />} />
         <Route path="/transaksipage" element={<Transaksipage />} />
-        {/* <Route path="/konfirmasidonasi" element={<Konfirmasidonasi />} /> */}
+        <Route path="/konfirmasidonasi" element={<Konfirmasidonasi />} />
         
 
       </Routes>

@@ -18,6 +18,7 @@ function Navbarfirst({ activeLinkProp }) {
       '/detailyayasan': 'features',
       '/galeripanti': 'features',
       '/transaksi2': 'features',
+      '/konfirmasidonasi': 'features',
       
     };
     const currentPath = location.pathname;
